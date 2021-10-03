@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+.header{
+    width: 100vw;
+}
+.bg-light{
+    background-color: #f1f4f6 !important;
+}
+.navbar-toggler,.navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+.navbar-brand{
+    padding-left: 12px;
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    display: flex;
+    
+}
+.navbar-brand img{
+    margin-top: -1px;
+}
+.navbar-brand .content{
+    padding-left: 10px;
+}
+.navbar ul{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 93.70vh;
+    background-color: #1b232a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+.main .row{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+
+@media (max-width:350px) {
+    .navbar-brand .content{
+        display: none;
+    }
+    .main{
+        height: 93.9vh;
+    }
+}
