@@ -51,7 +51,7 @@
 }
 
 .main .row{
-    height: calc(100vh - 56px);
+    height: calc(89vh - 56px);
 }
 .main .main-hero{
     background-image: url("./assets/hero.svg");
@@ -100,7 +100,7 @@
     }
 
     .ocean {
-        height: 80px; /* change the height of the waves here */
+        height: 60px; /* change the height of the waves here */
         width: 100%;
         position: absolute;
         overflow-x: hidden;
@@ -127,7 +127,7 @@
       .wave:nth-of-type(3) {
         background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%231B232A'/%3E%3C/svg%3E");
         bottom: 0;
-        height: 50%;
+        height: 60%;
         animation: wave 20s -1s linear infinite;
         opacity: 1;
       }
@@ -277,7 +277,39 @@
     }
 
     /*review*/
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
 
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      .swiper-wrapper {
+          width: 50% !important;
+      }
+      .swiper .content{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-self: center;
+          flex-direction: column;
+          margin-top: 10%;
+      }
+      .content .fa-star{
+          color: gold;
+      }
+
+    
 
 
     /*contact*/
@@ -294,7 +326,6 @@
         transition: none;
         border: none;
         border-radius: 37px;
-        font-family: 'Turret Road', cursive;
     
         border: 2px solid white;
       }
@@ -338,7 +369,6 @@
         background-color: #51aeff;
         border-radius: 14px;
         width: 150px;
-        font-family: 'Turret Road', cursive;
     
       }
       .button .btn-primary:hover{
@@ -347,7 +377,6 @@
       }
       .mail-phone{
         color: white;
-        font-family: 'Turret Road', cursive;
       }
       .mail-phone h5{
     
@@ -374,7 +403,6 @@
         color: #000;
         border: 2px solid white;
         border-radius: 50%;
-        font-family: 'Turret Road', cursive;
     
       }
       .icons .btn-primary:hover{
@@ -392,7 +420,6 @@
       }
       .copyright {
         align-self: center;
-        font-family: 'Turret Road', cursive;
     
       }
       .copy a {
@@ -448,7 +475,7 @@
         display: none;
     }
     .main .row{
-        height: calc(90vh - 54px);
+        height: calc(90vh - 54px) !important;
     }
 
 }
