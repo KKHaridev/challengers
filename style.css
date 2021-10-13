@@ -6,6 +6,10 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 .header{
     width: 100vw;
@@ -38,7 +42,7 @@
     color: white;
     display: flex;
     align-items: center;
-    margin-top: 56px;
+    margin-top: 32px;
 }
 
 
@@ -51,7 +55,7 @@
 }
 
 .main .row{
-    height: calc(89vh - 56px);
+    height: calc(100vh - 56px);
 }
 .main .main-hero{
     background-image: url("./assets/hero.svg");
@@ -176,6 +180,13 @@
         font-size: 4.5rem;
         margin-top: 30px;
     }
+
+    .highlights .iconify{
+      height: 4.678rem !important;
+      width: auto;
+  }
+    
+
     .highlights .card p{
         font-size: 3rem;
         font-weight: bolder;
@@ -286,10 +297,25 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        height: initial !important;
+        border-radius: 35px;
       }
+      .swiper-slide-active{
+        color: white;
+        background: linear-gradient(360deg, #FFCE31 -0.95%, #000000 -0.94%, #1B232A 93.27%);
+      }
+       .swiper-slide-prev, .swiper-slide-next{
+        
+        background: linear-gradient(360deg, #FFCE31 -0.95%, #000000 -0.94%, #1B232A 93.27%);
+        
+        color: #f1f4f6 !important;
 
+      }
+      .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top{
+        background: linear-gradient(360deg, #FFCE31 -0.95%, #000000 -0.94%, #1B232A 93.27%);
+        z-index: -5;
+        border-radius: 30px;
+      }
       .swiper-slide img {
         display: block;
         width: 100%;
@@ -298,17 +324,25 @@
           width: 50% !important;
       }
       .swiper .content{
-          display: flex;
-          justify-content: center;
+          
           text-align: center;
-          align-self: center;
-          flex-direction: column;
           margin-top: 10%;
+          border-radius: 35%;
+      }
+      .iconify{
+        height: 50px !important;
+        width: auto;
+        padding-bottom: 1rem;
       }
       .content .fa-star{
           color: gold;
       }
-
+      .founder{
+        padding-left: 50%;
+      }
+      :-webkit-scrollbar {
+        display: none;
+      }
     
 
 
