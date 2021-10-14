@@ -120,6 +120,8 @@ $(window).on("load",function(){
   })
   
   
+  
+
   $('.brand-carousel').owlCarousel({
     loop:true,
     margin:10,
